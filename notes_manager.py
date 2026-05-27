@@ -1,6 +1,9 @@
 from delete_note import delete_note
 from edit_note import edit_note
-
+from find_note import find_note
+from open_note import open_note
+from add_note import add_note
+from show_all import show_all
 
 def main():
     n = 0
@@ -15,21 +18,19 @@ def main():
               "7. Выйти")
         n = input()
         if n == "1":
-            add_note
+            add_note()
         if n == "2":
-            show_all
+            show_all()
         if n == "3":
-            open_note
+            open_note()
         if n == "4":
-            delete_note
+            delete_note()
         if n == "5":
-            edit_note
+            edit_note()
         if n == "6":
             find_note
         if n == '7':
             break
-        else:
-            print("Пока не реализовано")
 
 if __name__ == '__main__':
     main()
